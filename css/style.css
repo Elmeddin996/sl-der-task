@@ -1,0 +1,84 @@
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 500px;
+}
+
+.container .upload-zone input {
+  display: none;
+}
+
+.container .show-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.container .show-images img {
+  margin: 5px;
+  width: 200px;
+  -webkit-box-shadow: 5px 10px gray;
+          box-shadow: 5px 10px gray;
+}
+
+.container #slider-zone {
+  display: none;
+  position: relative;
+  width: 70%;
+  height: 300px;
+  margin: 0 auto;
+  border: 10px solid white;
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 2px 5px 5px #292828;
+          box-shadow: 2px 2px 5px 5px #292828;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container #slider-zone img {
+  position: absolute;
+  width: auto;
+  height: 300px;
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+}
+
+.container #slider-zone button {
+  padding: 15px;
+  border: none;
+  background-color: #37f;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+}
+
+.container #slider-zone .prew {
+  left: 0;
+  border-radius: 0 10px 10px 0;
+}
+
+.container #slider-zone .next {
+  right: 0;
+  border-radius: 10px 0 0 10px;
+}
+/*# sourceMappingURL=style.css.map */
